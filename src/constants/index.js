@@ -3,6 +3,10 @@ import {
     backend,
     creator,
     web,
+    read,
+    walk,
+    skydive,
+    travel,
     javascript,
     typescript,
     html,
@@ -42,20 +46,20 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "Read Any Genre of Books",
+      icon: read,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Go on Walks",
+      icon: walk,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Go Skydiving",
+      icon: skydive,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Traveling",
+      icon: travel,
     },
   ];
   
