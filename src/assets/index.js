@@ -25,6 +25,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.png";
+import python from "./tech/python.png";
+import c from "./tech/c.png";
+import sql from "./tech/sql.png";
+import flask from "./tech/flask.png";
+import adobe from "./tech/adobe.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -62,6 +68,12 @@ export {
   tailwind,
   typescript,
   threejs,
+  java,
+  python,
+  c,
+  sql,
+  flask,
+  adobe,
   meta,
   shopify,
   starbucks,
