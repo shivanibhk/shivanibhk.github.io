@@ -7,6 +7,12 @@ import {
     walk,
     skydive,
     travel,
+    java,
+    python,
+    c,
+    sql,
+    flask,
+    adobe,
     javascript,
     typescript,
     html,
@@ -66,6 +72,30 @@ import {
   
   const technologies = [
     {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "python",
+      icon: python,
+    },
+    {
+      name: "C/C++",
+      icon: c,
+    },
+    {
+      name: "SQLAlchemy",
+      icon: sql,
+    },
+    {
+      name: "Flask",
+      icon: flask,
+    },
+    {
+      name: "Adobe Technologies",
+      icon: adobe,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -77,18 +107,18 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -97,10 +127,10 @@ import {
       name: "Node JS",
       icon: nodejs,
     },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+    // {
+    //   name: "MongoDB",
+    //   icon: mongodb,
+    // },
     {
       name: "Three JS",
       icon: threejs,
@@ -109,14 +139,14 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
