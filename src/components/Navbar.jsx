@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, resume } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState(""); // default empty
@@ -39,13 +39,16 @@ const Navbar = () => {
             <li
               key={Link.id}
               className={`${
-                active === Link.title
+                active === Link.title && active != 'resume'
                 ? "text-white"
                 : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}
             >
-              <a href={`#${Link.id}`}>{Link.title}</a>
+              { active === 'Resume'
+                ? <a href={Link.id} target="_blank" rel="noopener noreferrer">{Link.title}</a>
+                : <a href={`${Link.id}`}>{Link.title}</a>
+              }
             </li>
           ))}
         </ul>
@@ -66,13 +69,17 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"}`}
+                  className={`font-poppins font-medium cursor-pointer text-[16px]
+                  ${active === nav.title ? "text-white" : "text-secondary"}`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  { active === 'Resume'
+                    ? <a href={nav.id} target="_blank" rel="noopener noreferrer">{nav.title}</a>
+                    : <a href={`${nav.id}`}>{nav.title}</a>
+                  }
                 </li>
               ))}
             </ul>

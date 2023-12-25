@@ -36,6 +36,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    resume,
   } from "../assets";
   
   export const navLinks = [
@@ -50,6 +51,10 @@ import {
     {
       id: "contact",
       title: "Contact",
+    },
+    {
+      id: resume,
+      title: "Resume",
     },
   ];
   
