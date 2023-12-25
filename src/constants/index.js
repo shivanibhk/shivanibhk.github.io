@@ -341,4 +341,4 @@ import {
     // },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
