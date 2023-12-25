@@ -47,7 +47,7 @@ const Navbar = () => {
             >
               { active === 'Resume'
                 ? <a href={Link.id} target="_blank" rel="noopener noreferrer">{Link.title}</a>
-                : <a href={`${Link.id}`}>{Link.title}</a>
+                : <a href={`#${Link.id}`}>{Link.title}</a>
               }
             </li>
           ))}
@@ -78,7 +78,7 @@ const Navbar = () => {
                 >
                   { active === 'Resume'
                     ? <a href={nav.id} target="_blank" rel="noopener noreferrer">{nav.title}</a>
-                    : <a href={`${nav.id}`}>{nav.title}</a>
+                    : <a href={`#${nav.id}`}>{nav.title}</a>
                   }
                 </li>
               ))}
