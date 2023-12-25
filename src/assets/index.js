@@ -41,6 +41,8 @@ import skyscend from "./company/skyscend.png"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import gojimcover from "./gojimcover.png";
+import personalweb from "./personalweb.png";
 
 export {
   logo,
@@ -79,6 +81,8 @@ export {
   starbucks,
   tesla,
   skyscend,
+  gojimcover,
+  personalweb,
   carrent,
   jobit,
   tripguide,
