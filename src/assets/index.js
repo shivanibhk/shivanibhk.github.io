@@ -44,6 +44,8 @@ import tripguide from "./tripguide.png";
 import gojimcover from "./gojimcover.png";
 import personalweb from "./personalweb.png";
 
+import resume from "./Hukkeri-Shivani-Resume.pdf";
+
 export {
   logo,
   backend,
@@ -86,4 +88,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  resume,
 };
