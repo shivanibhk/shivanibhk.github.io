@@ -11,9 +11,7 @@ const Computers = ({ isMobile }) => {
     <mesh>
       {/* need to create a light to see it; see react-three-fiber doc
       to see diff ways to add lights */}
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      {/* point light that shows up as glare on computer */}
-      <pointLight intensity={1} />
+      <hemisphereLight intensity={0.15} groundColor='black' />
       {/* will see computer after loading primitive into Canvas */}
       {/* main light: spotlight */}
       <spotLight
@@ -24,10 +22,12 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
+      {/* point light that shows up as glare on computer */}
+      <pointLight intensity={1} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3,- 2.2] : [0, -3.25, -1.5]}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -62,9 +62,9 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop='demand'
       shadows
+      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }} //where are we looking at this model from
       // pos:[x,y,z], fov: field of view (how wide our fov is going to be)
-      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }} // needs to be here to properly render 3D model
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -73,12 +73,13 @@ const ComputersCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2} // makes it so that we can only rotate it along a specific access
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
-  )
-}
-
-export default ComputersCanvas
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
+  
+        <Preload all />
+      </Canvas>
+    );
+  };
+  
+  export default ComputersCanvas;

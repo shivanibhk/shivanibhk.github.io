@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-import { styles } from '../style';
-import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { styles } from "../style";
+import { navLinks } from "../constants";
+import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState(''); // default empty
+  const [active, setActive] = useState(""); // default empty
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -52,29 +52,27 @@ const Navbar = () => {
 
         {/* MOBILE NAVBAR */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img 
+          <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
+            className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
 
-          <div className={`${!toggle ? 'hidden' :'flex' } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}>
-            <ul className='list-none flex justify-end items-start flex-col gap-4'>
-              {navLinks.map((Link) => (
+          <div
+            className={`${!toggle ? "hidden" : "flex"} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+              {navLinks.map((nav) => (
                 <li
-                  key={Link.id}
-                  className={`${
-                    active === Link.title
-                    ? "text-white"
-                    : "text-secondary"
-                  } font-poppings font-medium cursor-pointer text-[16px]`}
+                  key={nav.id}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"}`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(Link.title);
+                    setActive(nav.title);
                   }}
                 >
-                  <a href={`#${Link.id}`}>{Link.title}</a>
+                  <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>
