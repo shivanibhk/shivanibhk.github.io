@@ -5,6 +5,7 @@ import { isMobile } from "react-device-detect";
 import {styles } from '../style'
 import { ComputersCanvas } from './canvas';
 import { pc } from "../assets";
+import { is } from '@react-three/fiber/dist/declarations/src/core/utils';
 
 const Hero = () => {
   //console.log("is mobile:", isMobile)
@@ -23,7 +24,11 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               I am an aspiring software engineer <br className='sm:block hidden' /> with an interest in UI/UX design <br className='sm:block hidden' />and ML.
             </p>
-            <img src={pc} alt='pc' className='mt-12'/>
+            {
+              isMobile
+              ? <img src={pc} alt='pc' className='mt-12'/>
+              : <div></div>
+            }
             {/* <p className='mt-40 flex flex-row font-medium justify-center'>Best viewed on desktop!</p> */}
         </div>
       </div>
