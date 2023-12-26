@@ -29,7 +29,7 @@ const Hero = () => {
       {
         !isMobile
         ? <ComputersCanvas />
-        : <p className='mt-16 flex flex-row font-medium'>Best viewed on desktop!</p>
+        : <p className='mt-80 flex flex-row font-medium justify-center'>Best viewed on desktop!</p>
       }
       {/* 
         scrolling widget
