@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-Get to know a bit about me by viewing my [portfolio website](https://shivanibhk.github.io/){:target="_blank"}!
+Get to know a bit about me by viewing my [portfolio website](https://shivanibhk.github.io/)!
 
 
 ## Tech Stack ##
