@@ -7,6 +7,10 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
+
 // QX3PODBm52dvD7z4S
 // template_sy3yvon 
 // service_x6ou2x7
@@ -66,13 +70,32 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
+        <p
+          className="mt-12 mb-12 flex flex-row font-medium"
+        >
+        I am currently looking for Summer 2024 internship opportunities related to software engineering or artificial intelligence. Feel free to connect with me on LinkedIn or drop me an email at shivanihukkeri@gmail.com.
+        </p>
+
+        <div className='flex flex-row justify-normal gap-4'>
+          <a href="https://www.linkedin.com/in/shivani-hukkeri/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin 
+              className="icons w-12 h-12"
+            />
+          </a>
+          <a href="mailto:shivanihukkeri@gmail.com">
+            <MdEmail
+              className="icons w-12 h-12"
+            />
+          </a>
+        </div>
+
+        {/* <form
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
-        >
+        > */}
           {/* name field */}
-          <label className="flex flex-col">
+          {/* <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input 
               type="text"
@@ -82,10 +105,10 @@ const Contact = () => {
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-non border-none font-medium"
             />
-          </label>
+          </label> */}
 
           {/* email field */}
-          <label className="flex flex-col">
+          {/* <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input 
               type="email"
@@ -95,10 +118,10 @@ const Contact = () => {
               placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-non border-none font-medium"
             />
-          </label>
+          </label> */}
 
           {/* message field */}
-          <label className="flex flex-col">
+          {/* <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows="7"
@@ -108,15 +131,15 @@ const Contact = () => {
               placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-non border-none font-medium"
             />
-          </label>
+          </label> */}
 
-          <button
+          {/* <button
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
-        </form>
+        </form> */}
       </motion.div>
 
       {/* handle's earth */}
