@@ -73,7 +73,7 @@ const Contact = () => {
         <p
           className="mt-12 mb-12 flex flex-row font-medium"
         >
-        I am currently looking for Summer 2024 internship opportunities related to software engineering or artificial intelligence. Feel free to connect with me on LinkedIn or drop me an email at shivanihukkeri@gmail.com.
+        I am currently looking for Summer 2024 internship opportunities related to software engineering or artificial intelligence. Feel free to connect with me on LinkedIn or drop me an email at shivanihukkeri@gmail.com!
         </p>
 
         <div className='flex flex-row justify-normal gap-4'>
