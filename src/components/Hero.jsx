@@ -5,7 +5,7 @@ import { isMobile } from "react-device-detect";
 import {styles } from '../style'
 import { ComputersCanvas } from './canvas';
 import { pc } from "../assets";
-import { is } from '@react-three/fiber/dist/declarations/src/core/utils';
+
 
 const Hero = () => {
   //console.log("is mobile:", isMobile)
