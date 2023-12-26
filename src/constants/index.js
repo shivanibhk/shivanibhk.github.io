@@ -98,18 +98,18 @@ import {
       name: "Flask",
       icon: flask,
     },
-    {
-      name: "Adobe Technologies",
-      icon: adobe,
-    },
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
+    // {
+    //   name: "Adobe Technologies",
+    //   icon: adobe,
+    // },
+    // {
+    //   name: "HTML 5",
+    //   icon: html,
+    // },
+    // {
+    //   name: "CSS 3",
+    //   icon: css,
+    // },
     // {
     //   name: "JavaScript",
     //   icon: javascript,
