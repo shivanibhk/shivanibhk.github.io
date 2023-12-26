@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
+import { isMobile } from "react-device-detect";
+
 
 import {styles } from '../style'
 import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
+  //console.log("is mobile:", isMobile)
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -23,8 +26,14 @@ const Hero = () => {
       </div>
 
       {/* 3D computer model, underneath text */}
-      <ComputersCanvas />
-      {/* xs = extra small devices
+      {
+        !isMobile
+        ? <ComputersCanvas />
+        : <p className='mt-16 flex flex-row font-medium'>Best viewed on desktop!</p>
+      }
+      {/* 
+        scrolling widget
+          xs = extra small devices
           on extra small devices it'll have bottom 10
           else bottom 32
       */}
