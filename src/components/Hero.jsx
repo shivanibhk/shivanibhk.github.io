@@ -22,6 +22,7 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               I am an aspiring software engineer <br className='sm:block hidden' /> with an interest in UI/UX design <br className='sm:block hidden' />and ML.
             </p>
+            <p className='mt-80 flex flex-row font-medium justify-center'>Best viewed on desktop!</p>
         </div>
       </div>
 
@@ -29,7 +30,7 @@ const Hero = () => {
       {
         !isMobile
         ? <ComputersCanvas />
-        : <p className='mt-80 flex flex-row font-medium justify-center'>Best viewed on desktop!</p>
+        : <p></p>
       }
       {/* 
         scrolling widget
