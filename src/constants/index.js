@@ -64,7 +64,7 @@ import {
       icon: read,
     },
     {
-      title: "Go on Walks",
+      title: "Try New Walking Trails",
       icon: walk,
     },
     {
@@ -72,7 +72,7 @@ import {
       icon: skydive,
     },
     {
-      title: "Traveling",
+      title: "Travel Across the Globe",
       icon: travel,
     },
   ];
