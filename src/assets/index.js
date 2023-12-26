@@ -43,6 +43,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import gojimcover from "./gojimcover.png";
 import personalweb from "./personalweb.png";
+import pc from "./pc.png";
 
 // import resume from "./Hukkeri-Shivani-Resume.pdf";
 
@@ -88,5 +89,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  pc,
   // resume,
 };
