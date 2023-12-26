@@ -263,14 +263,14 @@ import {
     {
       name: "Personal Website",
       description:
-        "A personal portfolio to showcase my projects and experience, but also build a react website with lots of 3D graphics/models. It uses ThreeJS and framer motion to render and animate the 3D models, and allows for sending emails through the contact form.",
+        "A personal portfolio to showcase my projects and experience, but also build a react website with lots of 3D graphics/models. It uses ThreeJS and framer motion to render and animate the 3D models, as well as animate card components.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "tailwind-css",
           color: "green-text-gradient",
         },
         {

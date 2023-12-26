@@ -45,9 +45,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Open to diverse roles within the software engineering field, I am eager to leverage my versatile skill set and collaborate with teams to deliver innovative solutions. I am a passionate software developer with experience in building robust C/C++ programs, dynamic websites using React and Flask Python, and creating graphical applications using Java.
-
-        However, in addition to programming I also love to:
+        Open to diverse roles within the software engineering field, I am eager to leverage my versatile skill set and collaborate with teams to deliver innovative solutions. I am a passionate software developer with experience in building robust C/C++ programs, dynamic websites using React.js, Three.js, and Flask Python, and creating graphical applications using Java.
       </motion.p>
       <motion.p
         // fadeIn paras: direction, type, delay, duration of animation
