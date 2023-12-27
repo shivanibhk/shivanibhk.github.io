@@ -8,7 +8,7 @@ import { pc } from "../assets";
 
 
 const Hero = () => {
-  //console.log("is mobile:", isMobile)
+  console.log("is mobile:", isMobile)
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -27,7 +27,7 @@ const Hero = () => {
             {
               isMobile
               ? <img src={pc} alt='pc' className='mt-12'/>
-              : <div></div>
+              : null
             }
             {/* <p className='mt-40 flex flex-row font-medium justify-center'>Best viewed on desktop!</p> */}
         </div>
@@ -37,7 +37,7 @@ const Hero = () => {
       {
         !isMobile
         ? <ComputersCanvas />
-        : <p></p>
+        : null
       }
       {/* 
         scrolling widget
