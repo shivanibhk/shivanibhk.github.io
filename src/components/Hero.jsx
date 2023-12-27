@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
-import { isMobile } from "react-device-detect";
+import React, { useEffect, useState } from "react";
 
+import { motion } from 'framer-motion';
+// import { isMobile } from "react-device-detect";
 
 import {styles } from '../style'
 import { ComputersCanvas } from './canvas';
@@ -8,7 +9,31 @@ import { pc } from "../assets";
 
 
 const Hero = () => {
-  console.log("is mobile:", isMobile)
+  // console.log("is mobile:", isMobile)
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // checks to see if we're on mobile
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // sets isMobile variable to true or false
+    setIsMobile(mediaQuery.matches);
+
+    // handles changes to media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // add callback fnc as listener for changes to media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // remove listener when component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
