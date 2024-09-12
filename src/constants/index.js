@@ -36,6 +36,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    cleandesign,
     // resume,
   } from "../assets";
   
@@ -158,8 +159,30 @@ import {
   
   const experiences = [
     {
+      title: "Software Engineering Intern",
+      company_name: "CleanDesign Power Systems Inc.",
+      icon: cleandesign,
+      iconBg: "#E6DEDD",
+      date: "Aug 2024 - Present",
+      points: [
+      ],
+    },
+    {
+      title: "Software Engineering Intern",
+      company_name: "Skyscend Inc.",
+      icon: skyscend,
+      iconBg: "#383E56",
+      date: "Jul 2024 - Sept 2024",
+      points: [
+        "Conducted testing on web and mobile applications using Spring Boot and iOS platforms.",
+        "Integrated MongoDB with Spring Boot applications to enhance backend functionality and data management.",
+        "Utilized Postman to test and debug REST APIs, improving API reliability and performance.",
+        "Reduced support tickets by onboarding suppliers and demonstrating application usage to clients, optimizing user experience and support workflows.",
+      ],
+    },
+    {
       title: "Software Intern",
-      company_name: "Skyscend",
+      company_name: "Skyscend Inc.",
       icon: skyscend,
       iconBg: "#E6DEDD",
       date: "Jun 2021 - Jul 2022",
@@ -170,19 +193,6 @@ import {
         "Designed graphics & user icons for a variety of applications.",
       ],
     },
-    // {
-    //   title: "React Native Developer",
-    //   company_name: "Tesla",
-    //   icon: tesla,
-    //   iconBg: "#383E56",
-    //   date: "Jan 2021 - Feb 2022",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
     // {
     //   title: "Web Developer",
     //   company_name: "Shopify",
