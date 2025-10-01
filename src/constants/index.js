@@ -37,6 +37,7 @@ import {
     tripguide,
     threejs,
     cleandesign,
+    workday,
     // resume,
   } from "../assets";
   
@@ -159,19 +160,34 @@ import {
   
   const experiences = [
     {
-      title: "Software Engineering Intern",
-      company_name: "CleanDesign Power Systems Inc.",
-      icon: cleandesign,
+      title: "Data & Analytics Engineer Intern",
+      company_name: "Workday",
+      icon: workday,
       iconBg: "#E6DEDD",
-      date: "Aug 2024 - Present",
+      date: "Jun 2025 - Sept 2025",
       points: [
+        "Built and configured production-grade semantic models in the dbt Semantic Layer, implementing synonym and sample value logic to improve AI Cortex’s ability to parse natural language queries with greater accuracy",
+        "Contributed to the design and testing of the enterprise semantic layer, collaborating with engineers and product leads to evaluate build methods and prepare the semantic mesh for QA and production deployment",
+        "Developed an end-to-end dbt project that models real business entities, integrating QA testing, and aligns with established team methodologies to ensure scalable, production-ready data pipelines",
       ],
     },
     {
-      title: "Software Engineering Intern",
+      title: "Software Engineer Intern",
+      company_name: "CleanDesign Power Systems Inc.",
+      icon: cleandesign,
+      iconBg: "#383E56",
+      date: "Aug 2024 - Dec 2024",
+      points: [
+        "Analyzed codebase to identify areas for automation and optimization in data cleaning and analysis by examining existing Python scripts and detecting repetitive manual steps",
+        "Refactored code to fix issues in a key script responsible for generating client load profiles, improving accuracy",
+        "Developed comprehensive documentation detailing the current workflow, including how input data is processed and analyzed by the script",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
       company_name: "Skyscend Inc.",
       icon: skyscend,
-      iconBg: "#383E56",
+      iconBg: "#E6DEDD",
       date: "Jul 2024 - Sept 2024",
       points: [
         "Conducted testing on web and mobile applications using Spring Boot and iOS platforms.",
@@ -184,7 +200,7 @@ import {
       title: "Software Intern",
       company_name: "Skyscend Inc.",
       icon: skyscend,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "Jun 2021 - Jul 2022",
       points: [
         "Performed mobile testing on the SkyscendPay iOS application.",
